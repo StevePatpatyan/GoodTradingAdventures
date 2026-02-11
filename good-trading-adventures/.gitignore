@@ -1,0 +1,34 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# audio files (ommitted for customization)
+audio/beach_forest.wav
+audio/beach_forest.wav.import
+audio/detective_pk_sb_victory.wav
+audio/detective_pk_sb_victory.wav.import
+audio/detective_pk.wav
+audio/detective_pk.wav.import
+audio/mysterious_h.wav
+audio/mysterious_h.wav.import
+audio/thud.wav
+audio/thud.wav.import
+
+
+
+# Exported builds
+/build/
+*.exe
+*.pck
+*.apk
+*.ipa
+*.app
+*.x86_64
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://dauflf0a6rgrm"
+path="res://.godot/imported/detective_pk_intro.dialogue-aa2adb61ff110bbeb497184c4d0c7a44.tres"
+
+[deps]
+
+source_file="res://dialogues/detective_pk_intro.dialogue"
+dest_files=["res://.godot/imported/detective_pk_intro.dialogue-aa2adb61ff110bbeb497184c4d0c7a44.tres"]
+
+[params]
+
+defaults=true

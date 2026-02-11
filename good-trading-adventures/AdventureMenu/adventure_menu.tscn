@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://bx8vihvpqwngy"]
+
+[ext_resource type="Texture2D" uid="uid://ktxkr1j4kydo" path="res://icons/DetectivePK.png" id="1_2f3da"]
+[ext_resource type="Script" uid="uid://b5m6seuakertn" path="res://AdventureMenu/detective_pk.gd" id="2_emlu0"]
+
+[node name="AdventureMenu" type="Control" unique_id=1378709563]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = -53.0
+offset_right = 2.0
+offset_bottom = -53.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=279449226]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -187.0
+offset_top = 57.0
+offset_right = 177.0
+offset_bottom = 171.0
+grow_horizontal = 2
+theme_override_font_sizes/bold_font_size = 36
+bbcode_enabled = true
+text = "[center][b][color=#FFD700]Choose Your Adventure[/color][/b][/center]
+"
+
+[node name="ButtonContainer" type="VBoxContainer" parent="." unique_id=228104549]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -136.0
+offset_top = -42.0
+offset_right = 141.0
+offset_bottom = 57.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="DetectivePK" type="Button" parent="ButtonContainer" unique_id=1572637762]
+layout_mode = 2
+size_flags_vertical = 8
+text = "Detective PK and The Super Bowl Scandal"
+icon = ExtResource("1_2f3da")
+script = ExtResource("2_emlu0")

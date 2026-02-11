@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://jacobnnh8bbj"
+path="res://.godot/imported/police_station.dialogue-1b0b7914703d98eb74ed06295447353b.tres"
+
+[deps]
+
+source_file="res://dialogues/police_station.dialogue"
+dest_files=["res://.godot/imported/police_station.dialogue-1b0b7914703d98eb74ed06295447353b.tres"]
+
+[params]
+
+defaults=true

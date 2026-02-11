@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://b5o40bsvadd3c"
+path="res://.godot/imported/detective_pk_found_letter.dialogue-e60697fae4ab889a435a5aa0d34375d3.tres"
+
+[deps]
+
+source_file="res://dialogues/detective_pk_found_letter.dialogue"
+dest_files=["res://.godot/imported/detective_pk_found_letter.dialogue-e60697fae4ab889a435a5aa0d34375d3.tres"]
+
+[params]
+
+defaults=true

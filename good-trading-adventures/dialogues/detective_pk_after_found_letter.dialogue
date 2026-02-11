@@ -1,0 +1,60 @@
+~ start
+do Global.add_portrait(str(get_path()), "res://portraits/DetectivePK.png")
+do Global.character_look_at(get_node("/root/DetectivePK/Characters/DetectivePK"), get_node("/root/DetectivePK/Characters/Player"))
+do Global.character_look_at(get_node("/root/DetectivePK/Characters/Player"), get_node("/root/DetectivePK/Characters/DetectivePK"))
+if completed:
+	Detective PK: 1.. 2.. 3..
+	Detective PK: ...
+	Detective PK: Dangit, lost count.
+	Detective PK: Oh, you need that confirmation screen again? Let me know.
+	- Yes
+		Detective PK: Here ya go, palio.
+		do Global.add_portrait(str(get_path()), "res://portraits/DetectivePK_{0}_Art.png".format([Global.sprite_name]))
+		{{Global.username}}: {{certificate_text}}
+		do Global.add_portrait(str(get_path()), "res://portraits/DetectivePK.png".format([Global.sprite_name]))
+	- No
+		Detective PK: Just came to say hi, how kind.
+		Detective PK: What's that? You said you want another case of mine? FOR SURE PAL-O!!!!
+	Detective PK: Now, where was I? OH YEAH.
+	Detective PK: 1.. 2.. 3....
+elif found_culprit: # after finding culprit but before completing
+	Detective PK: You got the witness, kid?
+	Detective PK: Alright, carefully tell me the exact username of our guy.
+	set witness_username = get_player_input("Enter Discord username of witness:")
+	if witness_username == "":
+		Detective PK: Come on, don't be shy. Whenever you're ready, pal.
+	else: # entered some input
+		Detective PK: Alright, {{witness_username}}. Got it.
+		Detective PK: How about that verification code?
+		if get_player_input("Enter the code you received from the bot:") != str(calculate_witness_code()):
+			Detective PK: Ok, let's see.
+			Detective PK: ...
+			Detective PK: Huh? It's not adding up kid. You sure this is it?
+			Detective PK: Sorry, pal. You gotta either check again or get a new witness. This won't fly.
+		else: # code matched
+			Detective PK: Let's see here.
+			Detective PK: ...
+			set completed = true
+			do background_audio.fade_out(2)
+			do background_audio.set_audio("res://audio/detective_pk_sb_victory.wav")
+			do wait(1)
+			do background_audio.play()
+			# victory music
+			Detective PK: BOOM. Perfect, pal.
+			Detective PK: Well, I have to say. You did a bang-up job with such a grand case like this.
+			Detective PK: A couple more cases like this and you might get paid!!!!
+			Detective PK: Might. Just might.
+			Detective PK: Anyway, kid. I'm real proud of you. Here take this certificate. [color=cyan]Take a snapshot of it because I think it may reward you to have some proof of your great accomplishment.[/color].
+			do Global.add_portrait(str(get_path()), "res://portraits/DetectivePK_{0}_Art.png".format([Global.sprite_name]))
+			set certificate_text = Global.generate_completion_certificate_text("Detective PK and the Super Bowl Scandal")
+			{{Global.username}}: {{certificate_text}}
+			do Global.add_portrait(str(get_path()), "res://portraits/DetectivePK.png")
+			Detective PK: Bossman, if you need to see the certificate again, just talk to me.
+			Detective PK: Other than that, enjoy the taste of justice.
+else: # after finding letter but before finding culprit of scandal
+	Detective PK: Go get 'em, palio.
+	Detective PK: By the way, you signed the waiver, right?
+	Detective PK: What? I mean.. what waiver?
+
+do Global.remove_portrait(str(get_path()))
+=> END

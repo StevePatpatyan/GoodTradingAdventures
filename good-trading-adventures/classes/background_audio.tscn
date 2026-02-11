@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://cr37bkrkp24by"]
+
+[ext_resource type="Script" uid="uid://celt0h3ilwvd4" path="res://DetectivePK/background_audio.gd" id="2_0ak0u"]
+
+[node name="BackgroundAudio" type="AudioStreamPlayer2D" unique_id=1886362028]
+autoplay = true
+script = ExtResource("2_0ak0u")

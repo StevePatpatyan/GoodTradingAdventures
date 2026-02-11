@@ -1,0 +1,35 @@
+~ start
+# camera shake for bumping effect
+do camera.apply_shake()
+do sfx_audio.play()
+[shake][font_size=50]THUD[/font_size][/shake]
+# fade out music
+do background_audio.fade_out(2)
+do background_audio.set_audio("res://audio/detective_pk.wav")
+do wait(1)
+do background_audio.play()
+do Global.add_portrait(str(get_path()), "res://portraits/DetectivePK.png")
+???: Hey pal, what's the commotion around here!?
+???: You know what? Forget about it, kid. I've got an important case I gotta get to.
+???: What's that? You want to help me solve it? Yeah, I think I heard you mumble it or something.
+???: Well then... let me start by introducing myself.
+Detective PK: They call me PK... Detective PK.
+Detective PK: I'm the head detective here at Beach Forest.
+Detective PK: So here's the deal kid...
+Detective PK: Some Bozo Wacko bought all the Super Bowl Squares before anyone else could even get to 'em. What a loser, am I right? Doin' nothin' but ruining the Super Bowl for everyone.
+Detective PK: Kid, I got a lead from a guy who knows a guy who knows a... robot... I guess?
+Detective PK: Guy says this robot can do all kinds of stuff related to the [color=cyan]Trading Card Business.[/color]
+Detective PK: I need you to go track this robot down and tell it something. I think the guy said something something [color=cyan]"search underscore bot"[/color].
+Detective PK: OH, and I guess this was something important I have to tell you as well.
+Detective PK: The bot only understands you if you say some kind of [color=cyan]command signal[/color] or some razmatazz of that nature.
+Detective PK: Go search that sucka and gets me a step closer to finding this buffoon.
+Detective PK: KID, this is a private investigation. Make sure you [color=cyan]do this command in private.[/color]
+Detective PK: [color=cyan]Report back to me when you get a lead of some sort.[/color]
+Detective PK: Good luck kid. Thanks for taking this on.
+Detective PK: What's that? Couldn't hear you. I assume you said you're excited to dedicate your life to this.
+Detective PK: That's the spirit. GO GET EM!
+do background_audio.fade_out(2)
+do background_audio.set_audio("res://audio/beach_forest.wav")
+do background_audio.play()
+do Global.remove_portrait(str(get_path()))
+=> END

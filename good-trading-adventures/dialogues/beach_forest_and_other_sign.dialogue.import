@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://dpra7587i4e4b"
+path="res://.godot/imported/beach_forest_and_other_sign.dialogue-36da79aceb37c75c7788cab4002ce025.tres"
+
+[deps]
+
+source_file="res://dialogues/beach_forest_and_other_sign.dialogue"
+dest_files=["res://.godot/imported/beach_forest_and_other_sign.dialogue-36da79aceb37c75c7788cab4002ce025.tres"]
+
+[params]
+
+defaults=true

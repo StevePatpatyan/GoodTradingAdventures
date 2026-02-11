@@ -1,0 +1,15 @@
+~ start
+do Global.add_portrait(str(get_path()), "res://portraits/Art.png")
+do Global.character_look_at(get_node("/root/DetectivePK/Characters/Art"), get_node("/root/DetectivePK/Characters/Player"))
+do Global.character_look_at(get_node("/root/DetectivePK/Characters/Player"), get_node("/root/DetectivePK/Characters/Art"))
+
+if completed:
+	Art: [i]I knowwww you've been searching for someone[/i]
+	if get_player_input().to_lower() == "to make it happen and get the job done":
+		Art: NICE BUDDY
+	else:
+		Art: Hmm... I like it.
+else: # after finding him but before getting witness
+	Art: Yeah, buddy... I admit I messed up big time. I don't know what got into me.
+	Art: Rest assured, I'll do my time and be back and better than ever for the next Super Bowl!!!
+=> END

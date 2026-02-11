@@ -1,0 +1,4 @@
+~ start
+do Global.character_look_at(get_node("/root/DetectivePK/Characters/Player"), get_node("/root/DetectivePK/PoliceStationSign"))
+Obviously the police station.
+=> END

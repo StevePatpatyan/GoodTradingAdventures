@@ -1,0 +1,4 @@
+~ start
+do Global.character_look_at(get_node("/root/DetectivePK/Characters/Player"), get_node("/root/DetectivePK/BeachForestSign"))
+The fine line between the beach and the grasslands sits here.
+=> END

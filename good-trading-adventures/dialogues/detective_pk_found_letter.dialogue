@@ -1,0 +1,31 @@
+~ start
+do Global.add_portrait(str(get_path()), "res://portraits/DetectivePK.png")
+do Global.character_look_at(get_node("/root/DetectivePK/Characters/DetectivePK"), get_node("/root/DetectivePK/Characters/Player"))
+do Global.character_look_at(get_node("/root/DetectivePK/Characters/Player"), get_node("/root/DetectivePK/Characters/DetectivePK"))
+Detective PK: What's that kid? Did you find it?
+Detective PK: Well tell me then? What is it?
+if get_player_input("Enter the phrase here.").to_lower() == "a letter with one letter":
+	set reported_letter = true
+	# fade out music
+	do background_audio.fade_out(2)
+	do background_audio.set_audio("res://audio/detective_pk.wav")
+	do wait(1)
+	do background_audio.play()
+	Detective PK: Well, call me a fried fish stick on a Friday fiesta. That appears to be the bizarre case here.
+	Detective PK: It seems that the culprit uses some sort of niche language. Hmm....
+	do wait(2)
+	Detective PK: Well, good luck fella. I'm sure you can figure something out.
+	Detective PK: I do say though, there's something odd about the [color=cyan]forest side of this here town.[/color]
+	Detective PK: I rarely ever go to that half. There's just something creepy about it.
+	Detective PK: Like, the [color=cyan]configuration of the grass[/color] sorta throws me off, I think.
+	Detective PK: Anyways, I gotta take a massive one. See you soon, I assume?
+	Detective PK: What's that? I [i]WILL[/i] see you soon? THAT'S THE SPIRIT!!!
+	# fade out music
+	do background_audio.fade_out(2)
+	do background_audio.set_audio("res://audio/beach_forest.wav")
+	do background_audio.play()
+else:
+	Detective PK: Nah, that doesn't sound right...
+
+do Global.remove_portrait(str(get_path()))
+=> END

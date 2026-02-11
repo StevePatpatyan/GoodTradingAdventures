@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://bv4l1fblfccaf"]
+
+[ext_resource type="Script" uid="uid://bgc6pdqlcna7f" path="res://classes/actor.gd" id="1_o8v3l"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wcrlk"]
+size = Vector2(20, 10.000002)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dx6or"]
+radius = 18.0
+
+[node name="Actor" type="CharacterBody2D" unique_id=1306054412]
+y_sort_enabled = true
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_o8v3l")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=403245629]
+position = Vector2(0, 10.199982)
+scale = Vector2(1, 2.0399952)
+shape = SubResource("RectangleShape2D_wcrlk")
+
+[node name="InteractionHitbox" type="Area2D" parent="." unique_id=895439078]
+position = Vector2(0, -2)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionHitbox" unique_id=1803347572]
+position = Vector2(0, 8)
+shape = SubResource("CircleShape2D_dx6or")

@@ -1,0 +1,5 @@
+~ start
+do Global.character_look_at(get_node("/root/DetectivePK/Characters/Player"), get_node("/root/DetectivePK/BeachForestSign"))
+You tried reading both signs at once.
+"The fine line between the beach and the wrong sign."
+=> END

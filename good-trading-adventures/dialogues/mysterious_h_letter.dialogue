@@ -1,0 +1,75 @@
+~ start
+# fade out and play mysterious h sound
+do background_audio.fade_out(2)
+do background_audio.set_audio("res://audio/mysterious_h.wav")
+do wait(1)
+do background_audio.play()
+hhhhh: The [color=purple]h[/color] senses a rare tongue in written form.
+hhhh: Ok then, tell the [color=purple]h[/color], since the [color=purple]h[/color] does not have eyes.
+hhh: How many of the great letter [color=purple]h[/color] is placed on this medium?
+set player_input = get_player_input("Enter number of h in the letter.")
+if !player_input.is_valid_int():
+	hh: I'm telling you promptly. Do not mess with the [color=purple]h[/color].
+	h: Come back when you have a more proper answer.
+	The voice faded...
+elif player_input.to_int() != num_h:
+	hh: You really thought the [color=purple]h[/color] couldn't do all?
+	h: I know that is not the correct number. Come back with the right answer, the only acceptable answer for the [color=purple]h[/color].
+	The voice faded...
+else:
+	set found_culprit = true
+	do wait(1)
+	hh: Very well... AHHHHHHHHHHHHHHHH.......
+	do wait(3)
+	h: Mr. [color=cyan]Art K...[/color] Yes, it was him. He did it.
+	The voice faded into eternal hibernation.
+	# Enter PK
+	do background_audio.fade_out(2)
+	do background_audio.set_audio("res://audio/detective_pk.wav")
+	do wait(1)
+	do background_audio.play()
+	do Global.character_look_at(get_node("/root/DetectivePK/Characters/Player"), get_node("/root/DetectivePK/BeachForestSign"))
+	do enter_pk()
+	do Global.add_portrait(str(get_path()), "res://portraits/DetectivePK.png")
+	Detective PK: Nonononono.. waiwaiwaiwaiwait.
+	Detective PK: This can't be...
+	Detective PK: [color=red]My own brother[/color] is behind this?
+	Detective PK: No... this is total delusion. He's the one who set it up. Why would he buy his own squares out?
+	do Global.remove_portrait(str(get_path()))
+	???: ITS TRUE
+	do enter_art()
+	do Global.character_look_at(get_node("/root/DetectivePK/Characters/DetectivePK"), get_node("/root/DetectivePK/Characters/Art"))
+	do Global.character_look_at(get_node("/root/DetectivePK/Characters/Player"), get_node("/root/DetectivePK/Characters/Art"))
+	do Global.add_portrait(str(get_path()), "res://portraits/Art.png")
+	do Global.character_look_at(get_node("/root/DetectivePK/Characters/Art"), get_node("/root/DetectivePK/Characters/DetectivePK"))
+	???: It was me buddy.
+	do Global.add_portrait(str(get_path()), "res://portraits/DetectivePK.png")
+	Detective PK: Art!? How could you? I feel like I barely know who you are now.
+	do Global.add_portrait(str(get_path()), "res://portraits/Art.png")
+	Art: I had to bro. I used all my jackpot winnings from the cruise casino on every Super Bowl prop bet you could think of.
+	do Global.add_portrait(str(get_path()), "res://portraits/DetectivePK.png")
+	Detective PK: Hold up though, bro. If you buy all the squares, you can't even make money on them.
+	do background_audio.fade_out(2)
+	do wait(3)
+	do Global.add_portrait(str(get_path()), "res://portraits/Art.png")
+	do background_audio.set_audio("res://audio/detective_pk.wav")
+	do background_audio.fade_in(1)
+	Art: Didn't think about that...
+	do Global.add_portrait(str(get_path()), "res://portraits/DetectivePK.png")
+	Detective PK: Well I'm sorry, brotha. As head chief lead detective of Beach Forest, it is my duty to put you in timeout for 5 minutes.
+	do Global.character_look_at(get_node("/root/DetectivePK/Characters/DetectivePK"), get_node("/root/DetectivePK/Characters/Player"))
+	do Global.character_look_at(get_node("/root/DetectivePK/Characters/Player"), get_node("/root/DetectivePK/Characters/DetectivePK"))
+	Detective PK: Alright, Mr. {{Global.username}}, in order to sentence Art to timeout time, we need one witness to vouch for us.
+	Detective PK: I think this [color=cyan]Good Trading Bot[/color] thing is a huge hit right now, so [color=cyan]there's a lot of people around where that's at.[/color] You can grab your witness from there.
+	Detective PK: I actually got word that the department integrated a witness-finding program into that bad boy. Hold on, gotta pop a jig real quick to jog my memory.
+	do pk_jig()
+	do Global.character_look_at(get_node("/root/DetectivePK/Characters/DetectivePK"), get_node("/root/DetectivePK/Characters/Player"))
+	Detective PK: Alrighty, activate the witness-finding automation procedure by giving the bot the [color=cyan]"find_witness"[/color] command.
+	Detective PK: Report back here when you got someone. Great work so far, kid!!!!
+	Detective PK: What's that??? You love working for me? LOVING THIS PAL, KEEP IT UP!!!
+do background_audio.fade_out(2)
+do background_audio.set_audio("res://audio/beach_forest.wav")
+do wait(1)
+do background_audio.play()
+do Global.remove_portrait(str(get_path()))
+=> END

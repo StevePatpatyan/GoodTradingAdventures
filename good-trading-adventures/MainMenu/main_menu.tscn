@@ -1,0 +1,110 @@
+[gd_scene format=3 uid="uid://bi2hsgayy0l88"]
+
+[ext_resource type="Texture2D" uid="uid://csaphrv072b36" path="res://icons/Alex.png" id="1_po2gx"]
+[ext_resource type="Script" uid="uid://j6pwqlggcaof" path="res://MainMenu/configure_character.gd" id="2_po2gx"]
+[ext_resource type="Texture2D" uid="uid://rgk7ulnjm0p7" path="res://icons/David.png" id="3_kbpwf"]
+[ext_resource type="Texture2D" uid="uid://uqjtvafk2xmv" path="res://icons/Michael.png" id="4_jdgnk"]
+[ext_resource type="Texture2D" uid="uid://biud53sr3btcp" path="res://icons/Vanteh.png" id="5_r0x8f"]
+
+[node name="MainMenu" type="Control" unique_id=1706174637]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 296.0
+offset_right = -308.0
+offset_bottom = -273.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.010147, 1)
+mouse_filter = 2
+
+[node name="Title" type="RichTextLabel" parent="." unique_id=1506691665]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -187.0
+offset_top = 57.0
+offset_right = 177.0
+offset_bottom = 121.0
+grow_horizontal = 2
+mouse_filter = 2
+theme_override_font_sizes/bold_font_size = 36
+bbcode_enabled = true
+text = "[center][b][color=#FFD700]Who will you be?[/color][/b][/center]
+"
+
+[node name="LineEdit" type="LineEdit" parent="." unique_id=1639664101]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -158.5
+offset_top = -15.5
+offset_right = 158.5
+offset_bottom = 15.5
+grow_horizontal = 2
+grow_vertical = 2
+placeholder_text = "Discord Username (must type exact)"
+
+[node name="ButtonContainer" type="HBoxContainer" parent="." unique_id=1752104127]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -142.33598
+offset_top = -117.5
+offset_right = 134.664
+offset_bottom = 118.5
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Alex" type="Button" parent="ButtonContainer" unique_id=1720080922]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 8
+icon = ExtResource("1_po2gx")
+script = ExtResource("2_po2gx")
+
+[node name="David" type="Button" parent="ButtonContainer" unique_id=911149485]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 8
+icon = ExtResource("3_kbpwf")
+script = ExtResource("2_po2gx")
+
+[node name="Michael" type="Button" parent="ButtonContainer" unique_id=864208391]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 8
+icon = ExtResource("4_jdgnk")
+script = ExtResource("2_po2gx")
+
+[node name="Vanteh" type="Button" parent="ButtonContainer" unique_id=616041770]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 8
+icon = ExtResource("5_r0x8f")
+script = ExtResource("2_po2gx")
+
+[node name="Log" type="RichTextLabel" parent="." unique_id=2008234919]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -126.0
+offset_top = 33.0
+offset_right = 124.0
+offset_bottom = 73.0
+grow_horizontal = 2
+grow_vertical = 0
+bbcode_enabled = true
+fit_content = true

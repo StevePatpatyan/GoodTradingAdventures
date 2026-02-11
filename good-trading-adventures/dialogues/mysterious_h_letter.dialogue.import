@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://drk2wb4v88vga"
+path="res://.godot/imported/mysterious_h_letter.dialogue-4ca8c20985e135ccace72a7941550eb8.tres"
+
+[deps]
+
+source_file="res://dialogues/mysterious_h_letter.dialogue"
+dest_files=["res://.godot/imported/mysterious_h_letter.dialogue-4ca8c20985e135ccace72a7941550eb8.tres"]
+
+[params]
+
+defaults=true
