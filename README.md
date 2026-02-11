@@ -4,6 +4,10 @@ The variables and functions are modularized nicely into their respective adventu
 
 **Another way of implementing this for better automation and connectivity is through a separate backend/configured API which connects the game real-time to your bot. Not done here.**
 
+**Audio files are omitted but each one used is listed in the .gitignore file in the good-trading-adventures Godot project folder**
+
+===
+
 **Thank you to LPC Generator for character sprite generation. All of the individual artwork credits are included in the CREDITS.csv file**
 
 **Thank you to Chequered Ink for the tileset and buildings used in Detective PK and the Super Bowl Scandal. (Check their assets out here.)[https://ci.itch.io/all-game-assets].**
@@ -16,7 +20,7 @@ WASD to move
 E to interact
 Enter to enter input in adventure
 
-*NOTE: Must type exact discord username for interactive parts to work*
+*NOTE: Must type exact discord username for interactive parts with bot to work*
 
 ===
 
